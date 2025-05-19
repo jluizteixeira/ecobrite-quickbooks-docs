@@ -1,17 +1,14 @@
 from flask import Flask, request
-import os
 
 app = Flask(__name__)
 
-@app.route('/callback')
-def callback():
+@app.route('/')
+def oauth_callback():
     code = request.args.get('code')
-    realm_id = request.args.get('realmId')
     state = request.args.get('state')
-    
-    # Simplesmente para debug agora — depois você faz o token exchange
-    return f"Code: {code}<br>Realm ID: {realm_id}<br>State: {state}"
+    if code:
+        return f"Received code: {code}"
+    return "No code found"
 
-if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 10000))
-    app.run(host='0.0.0.0', port=port)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000)
