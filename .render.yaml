@@ -5,3 +5,4 @@ services:
     schedule: "0 * * * *"  # Executa a cada 1 hora
     buildCommand: ""
     startCommand: python quickbooks_full_export.py
+# Trigger deploy
