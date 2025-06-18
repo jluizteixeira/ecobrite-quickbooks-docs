@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: quickbooks-api-export
+    env: python
+    schedule: "0 * * * *"  # Executa a cada 1 hora
+    buildCommand: ""
+    startCommand: python quickbooks_full_export.py
