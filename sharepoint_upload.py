@@ -9,7 +9,7 @@ CLIENT_SECRET = "Kg98Q~lXfPoFL~KqIrd5ZA0ew_DoKAc.fwBMgatM"
 TENANT_ID = "a320b90f-c4a8-491a-a5e1-b8dba71beebb"
 
 # === CONFIGURAÇÃO DO DESTINO ===
-SHAREPOINT_SITE_NAME = "FPA-ECOS"
+SHAREPOINT_SITE_NAME = "FP&A-ECOS"
 SHAREPOINT_DRIVE_NAME = "Documents"
 TARGET_FOLDER_PATH = "ECOS Quickbooks Data"  # Subpasta dentro do drive
 LOCAL_FOLDER = "output"
